@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Brice';
+    src: url('../fonts/Brice-Regular.otf') format('otf'),
+  }
+
+  body {
+    font-family: 'Brice', Fallback, sans-serif;
+  }
+
+/* ------------------Sección navbar--------------------- */
+.nav-item{
+    padding: 0px 20px;
+}
+
+.navbar-brand{
+    padding: 10px 20px;
+}
