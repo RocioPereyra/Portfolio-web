@@ -12,6 +12,27 @@
     padding: 0px 20px;
 }
 
-.navbar-brand{
-    padding: 10px 20px;
+.navbar-nav{
+    padding-right: 45px;
 }
+
+.navbar-brand{
+    padding: 10px 60px;
+}
+
+.itemNav{
+    color: #4894A9!important;
+    
+}
+
+@media (max-width: 320px) {
+    .nav-item{
+      padding: 0;
+    } 
+.navbar-brand{
+    padding: 10px;
+} 
+.navbar-nav{
+    padding: 0;
+}
+  }
