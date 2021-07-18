@@ -115,6 +115,11 @@ height: 100vh;
   }
 
 
+    /* ----------------Main portfolio----------------- */
+    .trabajos{
+      width: 65%;
+    }
+
     /* ----------------Sección footer----------------- */
     
   .footer-pagina{
@@ -152,5 +157,9 @@ height: 100vh;
 
 .card{
   width: 70%;
+}
+
+.trabajos{
+  width: 90%;
 }
   }
