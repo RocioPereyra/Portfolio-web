@@ -9,6 +9,10 @@
     src: url('../fonts/Brice-Regular.otf') format('otf'),
   }
 
+  /* html{
+    scroll-behavior: smooth;
+  } */
+
   body {
     font-family: 'Brice', Fallback, sans-serif;
   }
@@ -120,6 +124,16 @@ height: 100vh;
       width: 65%;
     }
 
+    /* ----------------Main portfolio----------------- */
+    .parrafoPortfolio{
+      width: 70%;
+    }
+    .foto{
+      width: 300px;
+      margin-left: 100px;
+
+    }
+
     /* ----------------Sección footer----------------- */
     
   .footer-pagina{
@@ -160,6 +174,16 @@ height: 100vh;
 }
 
 .trabajos{
+  width: 90%;
+}
+
+.foto{
+  width: 65%;
+  margin: 0;
+
+}
+
+.parrafoPortfolio{
   width: 90%;
 }
   }
