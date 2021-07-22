@@ -62,6 +62,7 @@ background-color: rgba(255, 255, 255, 0)!important;
       width: 100%;
       min-height: 100vh;
       position: relative;
+      scroll-snap-align: center;
     
   }
   .natural{
@@ -69,6 +70,7 @@ background-color: rgba(255, 255, 255, 0)!important;
     width: 100%;
     min-height: 100vh;
     position: relative;
+    scroll-snap-align: center;
   }
 
   .celeste{
@@ -76,6 +78,7 @@ background-color: rgba(255, 255, 255, 0)!important;
     width: 100%;
     min-height: 100vh;
     position: relative;
+    scroll-snap-align: center;
   }
 
   /* .arcoiris{
@@ -87,10 +90,12 @@ background-color: rgba(255, 255, 255, 0)!important;
   .titulo{
     color: #EEE1D4;
     font-size: 80px;
+    text-shadow: 5px 5px 2px #4894A9;
   }
   .subtitulo{
     color: #EEE1D4;
     font-size: 30px;
+    text-shadow: 4px 4px 2px #4894A9;
   }
 
   .tituloN{
@@ -138,6 +143,7 @@ height: 100vh;
     
   .footer-pagina{
       background-color: #fdd7d0;
+      position: fixed;
   }
 
   .redes{
@@ -186,4 +192,13 @@ height: 100vh;
 .parrafoPortfolio{
   width: 90%;
 }
+  }
+
+
+  /* PRUEBA SNAP SROLL */
+
+  .contenedor{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
   }
