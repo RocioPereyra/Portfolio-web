@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 @font-face {
     font-family: 'Brice';
@@ -15,6 +18,7 @@
 
   body {
     font-family: 'Brice', Fallback, sans-serif;
+    /* overflow: hidden; */
   }
 
   .azul{
@@ -129,7 +133,7 @@ height: 100vh;
       width: 65%;
     }
 
-    /* ----------------Main portfolio----------------- */
+    /* ----------------Main Sobre Mi----------------- */
     .parrafoPortfolio{
       width: 70%;
     }
@@ -143,7 +147,6 @@ height: 100vh;
     
   .footer-pagina{
       background-color: #fdd7d0;
-      position: fixed;
   }
 
   .redes{
