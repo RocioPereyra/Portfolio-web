@@ -1,16 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <title>Rocío Pereyra</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <title>Rocío Pereyra</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="index.html"><img width="40px" src="images/marca-azul.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link itemNav" href="index.html">INICIO<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemNav" href="portfolio.html">PORTFOLIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemNav" href="sobreMi.html">SOBRE MI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link itemNav" href="contacto.html" tabindex="-1" aria-disabled="true">EXPERIENCIA</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-  </body>
+  <main>
+    <section class="contenedor">
+      <img class="arcoiris" src="images/arcoiris.png" alt="fondo-arcoiris">
+      <img class="arcoiris-pequeño" src="images/arcoiris-celu-1.png" alt="fondo-arcoiris">
+      <div class="naranja  d-flex flex-column justify-content-center">
+        <div class="container justify-content-center text-center contenido">
+          <p class="titulo" onload="dia()" id="diaSaludo"><b>FELIZ JUEVES!</b></p>
+          <p class="subtitulo"><b>Bienvenidos a mi web</b></p>
+        </div>
+      </div>
+      <div class="natural d-flex flex-md-row flex-column align-items-center justify-content-center text-center">
+        <img class="unicornio"  src="images/unicornio.png" alt="unicornio-bailando-poledance">
+        <div class="container justify-content-center text-center contenido">
+          <p class="tituloN"><b>SOBRE MI</b></p>
+          <p class="parrafo">Me presento! Soy Rocío Pereyra, diseñadora multimedial en proceso <br/> y actualmente cursando para ser desarrolladora web full stack.
+           <br> Me gusta mucho el pole sport y lo practico en mi tiempo libre. </p>
+        </div>
+      </div>
+      <div class="celeste d-flex align-items-center justify-content-center flex-wrap">
+        <div class="card contenido">
+          <div class="card-body d-flex flex-column align-items-center shadow rounded">
+            <img class="iconosCard pt-3" src="images/lapiz.png"  alt="">
+            <h5 class="card-title text-center azul pt-4">DISENO MULTIMEDIA</h5>
+            <p class="card-text text-center p-3">Desde historias para Instagram hasta posters y diseño de páginas web, me gusta crear diseños nuevos que se adapten a lo que busca el cliente, y así potenciar su negocio.</p>
+          </div>
+        </div>
+        <div class="card contenido">
+          <div class="card-body d-flex flex-column align-items-center shadow rounded">
+            <img class="iconosCard pt-3" src="images/programming.png"  alt="">
+            <h5 class="card-title text-center azul pt-4">DESARROLLO WEB</h5>
+            <p class="card-text text-center p-3">Soy desarrolladora web full stack, manejo el lenguaje de JavaScript y maqueto con HTML (Bootstrap) y css3. No dudes en contactarme para juntos crear tu próxima página web!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-pagina d-flex justify-content-center justify-content-md-end">
+    <div class="d-flex flex-column-reverse align-items-center flex-md-row justify-content-around w-75 py-4">
+      <div class="d-flex flex-column justify-content-center align-items-center pt-4">
+        <div>
+          <a class="pr-1 pl-1" href="https://instagram.com/rociopereyra_dm?utm_medium=copy_link" target="_blank"><img class="redes" src="images/ig.png" alt="instagram"></a>
+          <a class="pr-1 pl-1" href="https://twitter.com/Rociopereyra__" target="_blank"><img class="redes" src="images/tw.png" alt="twitter"></a>
+          <a class="pr-1 pl-1" href="#" target="_blank"><img class="redes" src="images/mail.png" alt="mail"></a>
+          <a class="pr-1 pl-1" href="https://github.com/RocioPereyra" target="_blank"><img class="redes" src="images/github.png" alt="github"></a>
+        </div>
+        <p class="small text-center pt-4 azul">&copy; Copyright 2021. Todos los derechos reservados.</p>
+      </div>
+      <img src="images/marca-azul.png" alt="logo" width="50px">
+    </div>
+  </footer>
+
+
+  <script src="js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>

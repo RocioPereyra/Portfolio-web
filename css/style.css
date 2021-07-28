@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+    font-family: 'Brice';
+    src: url('../fonts/Brice-Regular.otf') format('otf'),
+  }
+@font-face {
+    font-family: 'Brice-Bold';
+    src: url('../fonts/Brice-Bold.otf') format('otf'),
+  }
+
+
+
+  body {
+    font-family: 'Brice', Fallback, sans-serif;
+    /* overflow: hidden; */
+  }
+
+  .azul{
+    color: #4894A9;
+  }
+
+  /* Snap scroll */
+  /* .contenedor{
+    height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  } */
+
+/* ------------------Sección navbar--------------------- */
+.navbar{
+background-color: rgba(255, 255, 255, 0)!important;
+}
+
+.nav-item{
+    padding: 0px 20px;
+}
+
+.navbar-nav{
+    padding-right: 45px;
+}
+
+.navbar-brand{
+    padding: 10px 60px;
+}
+
+.itemNav{
+    color: #4894A9!important;
+    
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.dropdown-item:hover{
+  color: white;
+  background-color: #4894A9;
+}
+
+.dropdown-menu{
+  background-color: #4894a993;
+}
+
+  /* ----------------Sección main----------------- */
+  .naranja{
+      background-color: #F58251;
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      scroll-snap-align: center;
+    
+  }
+  .natural{
+    background-color: #EEE1D4;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    scroll-snap-align: center;
+  }
+
+  .celeste{
+    background-color: #9ecbdc;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    scroll-snap-align: center;
+  }
+
+  .arcoiris{
+    width: 100%;
+    height: 300vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .arcoiris-pequeño{
+    display: none;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .contenido{
+    z-index: 2;
+  }
+
+  .titulo{
+    color: #EEE1D4;
+    font-size: 80px;
+    text-shadow: 5px 5px 0px #4894A9;
+  }
+  .subtitulo{
+    color: #EEE1D4;
+    font-size: 30px;
+    text-shadow: 4px 4px 0px #4894A9;
+    
+  }
+
+  .tituloN{
+    color: #F58251;
+    font-size: 80px;
+  }
+
+  .parrafo{
+    font-family: 'Montserrat', sans-serif;;
+  }
+
+  .parrafo1{
+    width: 55%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .unicornio{
+    position: absolute;
+    height: 100vh;
+    left: -15px;
+  }
+
+  /* ------------------Sección cards------------------ */
+  .card{
+    width: 380px;
+    height: 450px;
+    margin: 30px;
+  }
+
+  .iconosCard{
+    width: 20%;
+  }
+
+    /* ----------------Sección contacto----------------- */
+
+  .titulo-contacto{
+    color: #EEE1D4;
+    font-size: 60px;
+  }
+
+  .tamaño-form{
+    width: 50%;
+  }
+
+  .form-group{
+    color: #4894A9;
+  }
+
+  .form-control{
+    background-color: #EEE1D4;
+    box-shadow : 4px 4px 2px #F3B84E;
+  }
+
+  .btn-contacto{
+    background-color: #EEE1D4;
+    color: #F58251;
+  }
+
+
+    /* ----------------Main portfolio----------------- */
+    .trabajoHover::before{
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgba(255, 255, 255, 0.651);
+      font-size: 25px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content:'';
+    }
+    
+    .trabajoHover:hover::before{
+      content:'VER TRABAJO COMPLETO';
+      transition: 0.4s!important;
+      background-color: rgba(0, 0, 0, 0.616);
+    
+    }
+
+    .hoverWrapper{
+      position: relative;
+      width: 50%;
+    }
+
+
+    /* ----------------Main Sobre Mi----------------- */
+    .parrafoPortfolio{
+      width: 70%;
+    }
+    .foto{
+      width: 300px;
+      margin-left: 100px;
+
+    }
+
+    /* ----------------Sección footer----------------- */
+    
+  .footer-pagina{
+      background-color: #fdd7d0;
+  }
+
+  .redes{
+    width: 30px;
+  }
+
+  /* ------------------Medias querys------------------ */
+
+  @media  (max-width: 800px) {
+    .nav-item{
+      padding: 0;
+    } 
+.navbar-brand{
+    padding: 10px;
+} 
+.navbar-nav{
+    padding: 0;
+}
+.tituloN{
+  font-size: 50px;
+}
+.titulo{
+  font-size: 60px;
+}
+.subtitulo{
+  font-size: 28px;
+}
+.parrafo1{
+  width: 80%;
+}
+
+.card{
+  width: 70%;
+}
+
+.trabajos{
+  width: 90%;
+}
+
+.foto{
+  width: 65%;
+  margin: 0;
+
+}
+
+.parrafoPortfolio{
+  width: 90%;
+}
+
+.tamaño-form{
+  width: 80%;
+}
+
+.titulo-contacto{
+  font-size: 40px;
+}
+
+  }
+
+  
+  @media  (max-width: 1050px) {
+    .unicornio{
+      display: none;
+
+        }
+    
+  }
+
+
+  @media  (max-width: 500px) {
+    .arcoiris{
+      display: none;
+
+        }
+
+    .arcoiris-pequeño{
+      display: initial;
+      height: 326vh;
+    }
+    
+    .titulo{
+      font-size: 50px;
+    }
+  }
+      
