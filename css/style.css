@@ -11,10 +11,12 @@
     font-family: 'Brice';
     src: url('../fonts/Brice-Regular.otf') format('otf'),
   }
+@font-face {
+    font-family: 'Brice-Bold';
+    src: url('../fonts/Brice-Bold.otf') format('otf'),
+  }
 
-  /* html{
-    scroll-behavior: smooth;
-  } */
+
 
   body {
     font-family: 'Brice', Fallback, sans-serif;
@@ -100,6 +102,14 @@ background-color: rgba(255, 255, 255, 0)!important;
     z-index: 1;
   }
 
+  .arcoiris-pequeño{
+    display: none;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+  }
+
   .contenido{
     z-index: 2;
   }
@@ -120,8 +130,14 @@ background-color: rgba(255, 255, 255, 0)!important;
     color: #F58251;
     font-size: 80px;
   }
+
+  .parrafo{
+    font-family: 'Montserrat', sans-serif;;
+  }
+
   .parrafo1{
     width: 55%;
+    font-family: 'Montserrat', sans-serif;
   }
   .unicornio{
     position: absolute;
@@ -274,5 +290,22 @@ background-color: rgba(255, 255, 255, 0)!important;
 
         }
     
+  }
+
+
+  @media  (max-width: 500px) {
+    .arcoiris{
+      display: none;
+
+        }
+
+    .arcoiris-pequeño{
+      display: initial;
+      height: 326vh;
+    }
+    
+    .titulo{
+      font-size: 50px;
+    }
   }
       
