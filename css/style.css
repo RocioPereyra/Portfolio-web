@@ -9,18 +9,15 @@
 
 @font-face {
     font-family: 'Brice';
-    src: url('../fonts/Brice-Regular.otf') format('otf'),
+    src: url('../fonts/Brice-Regular.otf') format('otf');
+    src: url('../fonts/Brice-Bold.otf') format('otf');
   }
-@font-face {
-    font-family: 'Brice-Bold';
-    src: url('../fonts/Brice-Bold.otf') format('otf'),
-  }
+
 
 
 
   body {
     font-family: 'Brice', Fallback, sans-serif;
-    /* overflow: hidden; */
   }
 
   .azul{
@@ -53,7 +50,7 @@ background-color: rgba(255, 255, 255, 0)!important;
 
 .navbar-brand:hover{
   animation: flip;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 .itemNav{
@@ -121,6 +118,7 @@ background-color: rgba(255, 255, 255, 0)!important;
 
   .titulo{
     color: #EEE1D4;
+    font-weight: bold;
     font-size: 80px;
     text-shadow: 5px 5px 0px #4894A9;
   }
