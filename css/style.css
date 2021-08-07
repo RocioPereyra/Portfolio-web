@@ -13,15 +13,8 @@
     src: url('../fonts/Brice-Bold.otf') format('otf');
   }
 
-
-
-
   body {
     font-family: 'Brice', Fallback, sans-serif;
-  }
-
-  .azul{
-    color: #4894A9;
   }
 
   /* Snap scroll */
