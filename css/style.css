@@ -165,6 +165,7 @@ background-color: rgba(255, 255, 255, 0)!important;
   .titulo-contacto{
     color: #EEE1D4;
     font-size: 60px;
+    font-family: 'Brice-Bold';
   }
 
   .tamaño-form{
@@ -185,8 +186,12 @@ background-color: rgba(255, 255, 255, 0)!important;
     color: #F58251;
   }
 
+  .btn-contacto:hover{
+    background-color: #4894A9;
+    color: #EEE1D4;
+  }
 
-    /* ----------------Main portfolio----------------- */
+    /* ----------------Sección portfolio----------------- */
     .trabajoHover::before{
       position: absolute;
       top: 0;
@@ -213,15 +218,9 @@ background-color: rgba(255, 255, 255, 0)!important;
       width: 50%;
     }
 
-
-    /* ----------------Main Sobre Mi----------------- */
-    .parrafoPortfolio{
-      width: 70%;
-    }
-    .foto{
-      width: 300px;
-      margin-left: 100px;
-
+    .carousel{
+      width: 90%;
+      object-fit: none;
     }
 
     /* ----------------Sección footer----------------- */
@@ -317,6 +316,10 @@ background-color: rgba(255, 255, 255, 0)!important;
 
     .parrafo{
       padding: 0 1rem;
+    }
+
+    .titulo-contacto{
+      color: #4894A9;
     }
   }
       
