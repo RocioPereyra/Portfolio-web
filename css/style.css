@@ -3,9 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar {
-  display: none;
-}
 
 @font-face {
   font-family: 'Brice';
@@ -20,13 +17,6 @@ body, main {
   font-family: 'Brice', 'Montserrat', sans-serif;
   position: relative;
 }
-
-  /* Snap scroll */
-  /* .contenedor{
-    height: 100vh;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-  } */
 
 /* ------------------Sección navbar--------------------- */
 .navbar{
@@ -192,7 +182,7 @@ background-color: rgba(255, 255, 255, 0)!important;
   }
 
     /* ----------------Sección portfolio----------------- */
-    .trabajoHover::before{
+    /* .trabajoHover::before{
       position: absolute;
       top: 0;
       display: flex;
@@ -216,12 +206,21 @@ background-color: rgba(255, 255, 255, 0)!important;
     .hoverWrapper{
       position: relative;
       width: 50%;
+    } */
+
+    .carousel-inner{
+      width: 80%;
+    }
+    .carousel{
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
-    .carousel{
-      width: 90%;
-      object-fit: none;
+    .modal-fade{
+      width: 80%;
     }
+
 
     /* ----------------Sección footer----------------- */
     
@@ -246,13 +245,18 @@ background-color: rgba(255, 255, 255, 0)!important;
     padding: 0;
 }
 .tituloN{
-  font-size: 50px;
+  font-size: 40px;
 }
 .titulo{
   font-size: 60px;
+  color: #4894A9;
+  text-shadow: 5px 5px 0px#EEE1D4;
 }
 .subtitulo{
   font-size: 28px;
+  color: #4894A9;
+  text-shadow: 4px 4px 0px #EEE1D4;
+  
 }
 .parrafo1{
   width: 80%;
@@ -263,7 +267,9 @@ background-color: rgba(255, 255, 255, 0)!important;
 }
 
 .card{
-  width: 70%;
+  width: 90vw;
+  min-height: 23rem;
+  height: auto;
 }
 
 .trabajos{
