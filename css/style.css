@@ -217,8 +217,14 @@ background-color: rgba(255, 255, 255, 0)!important;
       justify-content: center;
     }
 
-    .fade{
-      background-color: rgba(255, 255, 255, 0.219);
+    /* .modal{
+      overflow: visible;
+      justify-content: center;
+    } */
+
+    .modal-content{
+      width: 90vw;
+
     }
 
     /* ----------------Sección footer----------------- */
