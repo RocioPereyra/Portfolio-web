@@ -186,7 +186,7 @@ height: 60px;
   }
 
     /* ----------------Sección portfolio----------------- */
-    /* .trabajoHover::before{
+    .trabajoHover::before{
       position: absolute;
       top: 0;
       display: flex;
@@ -210,7 +210,7 @@ height: 60px;
     .hoverWrapper{
       position: relative;
       width: 50%;
-    } */
+    }
 
     .carousel-inner{
       width: 80%;
