@@ -13,10 +13,15 @@
   src: url(../fonts/Brice-Bold.otf);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body, main {
   font-family: 'Brice', 'Montserrat', sans-serif;
   position: relative;
 }
+
 
 /* ------------------Sección navbar--------------------- */
 .navbar{
@@ -245,6 +250,10 @@ height: 60px;
     
   footer{
       background-color: #fdd7d0;
+  }
+
+  .copy{
+    color: #4894A9;
   }
 
   .redes{

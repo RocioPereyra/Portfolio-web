@@ -6,22 +6,22 @@ switch (dia) {
     saludo.innerText=`FELIZ DOMINGO!`
     break;
   case 1:
-    saludo.innerText=`BUEN LUNES!`
+    saludo.innerText=`FELIZ LUNES!`
     break;
   case 2:
-    saludo.innerText=`BUEN MARTES!`
+    saludo.innerText=`FELIZ MARTES!`
     break;
   case 3:
-    saludo.innerText=`BUEN MIERCOLES!`
+    saludo.innerText=`FELIZ MIERCOLES!`
     break;
   case 4:
     saludo.innerText=`FELIZ JUEVES!`
     break;
   case 5:
-    saludo.innerText=`BUEN VIERNES!`
+    saludo.innerText=`FELIZ VIERNES!`
     break;
 
   default:
-    saludo.innerText=`BUEN SABADO!`
+    saludo.innerText=`FELIZ SABADO!`
     break;
 }
