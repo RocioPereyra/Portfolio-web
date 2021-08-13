@@ -20,11 +20,13 @@ body, main {
 
 /* ------------------Sección navbar--------------------- */
 .navbar{
-background-color: rgba(255, 255, 255, 0)!important;
+background-color: #f58251b8!important;
+height: 60px;
 }
 
 .nav-item{
     padding: 0px 20px;
+   
 }
 
 .navbar-nav{
@@ -41,7 +43,8 @@ background-color: rgba(255, 255, 255, 0)!important;
 }
 
 .itemNav{
-    color: #4894A9!important;
+    color: #EEE1D4!important;
+    text-shadow: 2px 1px 1px#4894A9;
     
 }
 
@@ -125,14 +128,10 @@ background-color: rgba(255, 255, 255, 0)!important;
 
   .parrafo{
     font-family: 'Montserrat', sans-serif;
-    padding: 0 12rem;
+    padding: 0 8rem;
 
   }
 
-  .parrafo1{
-    width: 55%;
-    font-family: 'Montserrat', sans-serif;
-  }
   .unicornio{
     position: absolute;
     height: 100vh;
@@ -217,14 +216,29 @@ background-color: rgba(255, 255, 255, 0)!important;
       justify-content: center;
     }
 
-    /* .modal{
-      overflow: visible;
-      justify-content: center;
-    } */
-
     .modal-content{
       width: 90vw;
+    }
+    .modal-dialog{
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-body{
+      padding: 4rem 1rem;
+    }
 
+    .img1{
+      width: 20%;
+    }
+    .img2{
+      width: 40%;
+
+    }
+
+    .img-ocultas{
+      display: none;
     }
 
     /* ----------------Sección footer----------------- */
@@ -243,6 +257,10 @@ background-color: rgba(255, 255, 255, 0)!important;
     .nav-item{
       padding: 0;
     } 
+.nav-link{
+  color: #4894A9!important;
+  text-shadow: none;
+}
 .navbar-brand{
     padding: 10px;
 } 
@@ -262,9 +280,6 @@ background-color: rgba(255, 255, 255, 0)!important;
   color: #4894A9;
   text-shadow: 4px 4px 0px #EEE1D4;
   
-}
-.parrafo1{
-  width: 80%;
 }
 
 .parrafo{
@@ -299,6 +314,8 @@ background-color: rgba(255, 255, 255, 0)!important;
   font-size: 40px;
 }
 
+
+
   }
 
   
@@ -311,7 +328,7 @@ background-color: rgba(255, 255, 255, 0)!important;
   }
 
 
-  @media  (max-width: 500px) {
+  @media  (max-width: 768px) {
     .arcoiris{
       display: none;
 
@@ -331,5 +348,40 @@ background-color: rgba(255, 255, 255, 0)!important;
 
     .titulo-contacto{
       color: #4894A9;
+    }
+
+    .img1{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .img2{
+      width: 100%;
+      margin-bottom: 1rem;
+
+    }
+    .nav-link{
+      text-align: center;
+      color: #4894A9!important;
+      text-shadow: none;
+      
+    }
+    .navbar-nav{
+      border-radius: 10px;
+      background-color: #eee1d4c2;
+    }
+    .navbar{
+      background-color: #f5825100!important;
+      height: auto;
+      }
+
+  }
+
+  @media (max-width: 550px){
+    .carousel{
+      display: none;
+    }
+
+    .img-ocultas{
+      display: block;
     }
   }
