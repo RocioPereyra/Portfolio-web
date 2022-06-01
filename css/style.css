@@ -49,7 +49,7 @@ height: 60px;
 
 .itemNav{
     color: #EEE1D4!important;
-    text-shadow: 2px 1px 1px#4894A9;
+    text-shadow: 1px 1px 1px#4894a97e;
     
 }
 
@@ -252,6 +252,9 @@ height: 60px;
     .img6{
       width: 33.33%;
     }
+    .img7{
+      width: 50%;
+    }
 
     .img-ocultas{
       display: none;
@@ -291,9 +294,7 @@ height: 60px;
 .navbar-nav{
     padding: 0;
 }
-.tituloN{
-  font-size: 40px;
-}
+
 .titulo{
   font-size: 60px;
   color: #4894A9;
